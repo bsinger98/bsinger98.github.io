@@ -8,9 +8,16 @@
     src: url(../fonts/Roadrage.otf);
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: 'Inter';
     background-color: #1F0039;
+    overflow-x: hidden;
+    margin-bottom: 200px;
 }
 
 h1 {
@@ -24,6 +31,9 @@ p {
 }
 
 .main-container {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
     margin-top: 2%;
 }
 
@@ -37,4 +47,29 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* .cyber-grid {
+    background-image: url('../images/cyber-grid.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+} */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.cyber-grid {
+    width: 100%;
+    height: 200px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
 }
