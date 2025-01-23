@@ -1,6 +1,13 @@
+:root {
+    --neon-yellow: #fede5d;
+    --white: #f0f0f0;
+    --background-purple: #1F0039;
+    --neon-pink: #FE18D3;
+}
+
 @font-face {
-    font-family: ModeSeven;
-    src: url(../fonts/Modeseven.ttf);
+    font-family: JetBrains;
+    src: url(../fonts/jetbrains/JetBrainsMono-Regular.woff2);
 }
 
 @font-face {
@@ -15,19 +22,32 @@ html {
 
 body {
     font-family: 'Inter';
-    background-color: #1F0039;
+    background-color: var(--background-purple);
     overflow-x: hidden;
     margin-bottom: 200px;
 }
 
 h1 {
     font-family: 'Road Rage';
-    color: #FE18D3;
+    color: var(--neon-pink);
 }
 
 p {
-    font-family: 'ModeSeven';
-    color: #0DFF00;
+    font-family: 'JetBrains', monospace;
+    color: var(--white);
+}
+
+a {
+    color: var(--neon-yellow);
+    text-decoration: none;
+    text-shadow: 0 0 1px var(--neon-yellow), 0 0 8px var(--neon-yellow);
+    transition: all 0.1s ease;
+}
+
+a:hover {
+    color: var(--white);
+    text-shadow: 0 0 2px var(--white), 0 0 10px var(--white);
+    transform: scale(1.05);
 }
 
 .main-container {
@@ -65,5 +85,5 @@ p {
 }
 
 .brian {
-    color: #0d6efd;
+    color: var(--neon-yellow);
 }
